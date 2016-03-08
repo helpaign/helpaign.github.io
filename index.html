@@ -181,7 +181,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   function revokePermissions(){
     if(userid.length != 0 || userid != '')
     {
-      FB.api('DELETE /'+userid+'/permissions',function(response){
+      FB.api('DELETE/'+userid+'/permissions',function(response){
          console.dir(response);
       });
     }
